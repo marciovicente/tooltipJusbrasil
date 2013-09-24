@@ -1,0 +1,78 @@
+ <!doctype html>
+ <html lang="pt-BR">
+ <head>
+ 	<meta charset="UTF-8">
+ 	<title>Box</title>
+ 	<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/index.css">
+ </head>
+ <body>
+ 	<div class="box">
+ 		<h4 class="title">mais lidas</h4>
+ 		<ul class="listNews">
+ 			<li data-number="1">
+ 				<span class="number">1</span>
+ 				<a href="#" title="Titulo da noticia 1"> Noticia 1: Atriz Neuza Borges sofre acidente vascular cerebral e é internada no Rio</a>
+ 			</li>
+ 			<li data-number="2">
+ 				<span class="number">2</span>
+ 				<a href="#" title="Titulo da noticia 2"> Noticia 2:  Atriz Neuza Borges sofre acidente vascular cerebral e é internada no Rio</a>
+ 			</li>
+ 			<li data-number="3" title="Notícia 3">
+ 				<span class="number">3</span>
+ 				<a href="#" title="Titulo da noticia 3"> Noticia 3: Atriz Neuza Borges sofre acidente vascular cerebral e é internada no Rio</a>
+ 			</li>
+ 			<li data-number="4">
+ 				<span class="number">4</span>
+ 				<a href="#" title="Titulo da noticia 4"> Noticia 4:  Atriz Neuza Borges sofre acidente vascular cerebral e é internada no Rio</a>
+ 			</li>
+ 			<li data-number="5">
+ 				<span class="number">5</span>
+ 				<a href="#" title="Titulo da noticia 5">Noticia 5:  Atriz Neuza Borges sofre acidente vascular cerebral e é internada no Rio</a>
+ 			</li>
+ 		</ul>
+ 	</div>
+
+	<div id="tooltip"><span class="labelTooltip"></span></div>
+
+
+ 	<footer>
+	 	<form>
+	 		<label>
+	 			Trocar cor
+		 		<input type="color" name="color" class="color">
+	 		</label>
+
+	 		<label>
+	 			Adicionar Item
+	 			<input type="number" class="inputAdd" placeholder="Ex: 1,2,...">
+	 			<button class="add">Adicionar</button>
+	 		</label>
+
+	 		<label>
+	 			Remover Item
+	 			<input type="number" class="inputRemove" placeholder="Ex: 1,2,...">
+	 			<button class="remove">Remover</button>
+	 		</label>
+
+	 		<label>
+	 			Inverter ordem
+	 			<button class="invert">Inverter</button>
+	 		</label>
+
+	 	</form>
+ 		
+ 	</footer>
+ 	
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="js/app.min.js"></script>
+ 	<script>
+	 	$(document).ready(function(){
+	 		initialize();
+ 		});
+
+	 	
+ 	</script>
+ </body>
+ </html>
